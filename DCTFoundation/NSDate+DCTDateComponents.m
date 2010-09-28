@@ -1,5 +1,5 @@
 /*
- NSDate+DCTDateComponents.h
+ NSDate+DCTDateComponents.m
  DCTFoundation
  
  Created by Daniel Tull on 28.07.2009.
