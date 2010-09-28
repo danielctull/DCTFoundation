@@ -10,6 +10,7 @@
 		2406BA2C124FAD6A00566522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2406BA2B124FAD6A00566522 /* Foundation.framework */; };
 		2406BA3D124FADB500566522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2406BA3C124FADB500566522 /* main.m */; };
 		244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAEBB12522ADE00A7255B /* DCTQueue.m */; };
+		244DAECD12522C2D00A7255B /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAECC12522C2D00A7255B /* DCTStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		2406BA3C124FADB500566522 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		244DAEBA12522ADE00A7255B /* DCTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTQueue.h; sourceTree = "<group>"; };
 		244DAEBB12522ADE00A7255B /* DCTQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTQueue.m; sourceTree = "<group>"; };
+		244DAECB12522C2D00A7255B /* DCTStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTStack.h; sourceTree = "<group>"; };
+		244DAECC12522C2D00A7255B /* DCTStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 			children = (
 				244DAEBA12522ADE00A7255B /* DCTQueue.h */,
 				244DAEBB12522ADE00A7255B /* DCTQueue.m */,
+				244DAECB12522C2D00A7255B /* DCTStack.h */,
+				244DAECC12522C2D00A7255B /* DCTStack.m */,
 			);
 			path = DCTFoundation;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			files = (
 				2406BA3D124FADB500566522 /* main.m in Sources */,
 				244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */,
+				244DAECD12522C2D00A7255B /* DCTStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
