@@ -1,5 +1,5 @@
 /*
- NSArray+DTExtras.h
+ NSArray+DTExtras.m
  DCTFoundation
  
  Created by Daniel Tull on 30.09.2009.
