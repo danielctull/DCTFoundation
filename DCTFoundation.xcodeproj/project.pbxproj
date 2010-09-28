@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2406BA2C124FAD6A00566522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2406BA2B124FAD6A00566522 /* Foundation.framework */; };
 		2406BA3D124FADB500566522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2406BA3C124FADB500566522 /* main.m */; };
+		244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAEBB12522ADE00A7255B /* DCTQueue.m */; };
+		244DAECD12522C2D00A7255B /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAECC12522C2D00A7255B /* DCTStack.m */; };
+		244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED012522CE400A7255B /* NSArray+DCTExtras.m */; };
+		244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,14 @@
 		2406BA2B124FAD6A00566522 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2406BA31124FAD6A00566522 /* DCTFoundation_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTFoundation_Prefix.pch; sourceTree = "<group>"; };
 		2406BA3C124FADB500566522 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		244DAEBA12522ADE00A7255B /* DCTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTQueue.h; sourceTree = "<group>"; };
+		244DAEBB12522ADE00A7255B /* DCTQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTQueue.m; sourceTree = "<group>"; };
+		244DAECB12522C2D00A7255B /* DCTStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTStack.h; sourceTree = "<group>"; };
+		244DAECC12522C2D00A7255B /* DCTStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTStack.m; sourceTree = "<group>"; };
+		244DAECF12522CE400A7255B /* NSArray+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCTExtras.h"; sourceTree = "<group>"; };
+		244DAED012522CE400A7255B /* NSArray+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCTExtras.m"; sourceTree = "<group>"; };
+		244DAED512522DED00A7255B /* NSDate+DCTDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSDate+DCTDateComponents.h"; sourceTree = "<group>"; };
+		244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DCTDateComponents.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,14 @@
 		2406BA3F124FADD500566522 /* DCTFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				244DAEBA12522ADE00A7255B /* DCTQueue.h */,
+				244DAEBB12522ADE00A7255B /* DCTQueue.m */,
+				244DAECB12522C2D00A7255B /* DCTStack.h */,
+				244DAECC12522C2D00A7255B /* DCTStack.m */,
+				244DAECF12522CE400A7255B /* NSArray+DCTExtras.h */,
+				244DAED012522CE400A7255B /* NSArray+DCTExtras.m */,
+				244DAED512522DED00A7255B /* NSDate+DCTDateComponents.h */,
+				244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */,
 			);
 			path = DCTFoundation;
 			sourceTree = "<group>";
@@ -143,6 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2406BA3D124FADB500566522 /* main.m in Sources */,
+				244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */,
+				244DAECD12522C2D00A7255B /* DCTStack.m in Sources */,
+				244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */,
+				244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
