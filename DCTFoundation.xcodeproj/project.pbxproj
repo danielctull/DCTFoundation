@@ -14,6 +14,8 @@
 		244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED012522CE400A7255B /* NSArray+DCTExtras.m */; };
 		244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */; };
 		249EA1D512527DFB0043BC85 /* NSObject+DCTPropertyClearup.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EA1D412527DFB0043BC85 /* NSObject+DCTPropertyClearup.m */; };
+		249EA1E1125285BC0043BC85 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EA1E0125285BC0043BC85 /* TestClass.m */; };
+		249EA1F0125287A20043BC85 /* TestSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 249EA1EF125287A20043BC85 /* TestSubclass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DCTDateComponents.m"; sourceTree = "<group>"; };
 		249EA1D312527DFB0043BC85 /* NSObject+DCTPropertyClearup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTPropertyClearup.h"; sourceTree = "<group>"; };
 		249EA1D412527DFB0043BC85 /* NSObject+DCTPropertyClearup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTPropertyClearup.m"; sourceTree = "<group>"; };
+		249EA1DF125285BC0043BC85 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = SOURCE_ROOT; };
+		249EA1E0125285BC0043BC85 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = SOURCE_ROOT; };
+		249EA1EE125287A20043BC85 /* TestSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubclass.h; sourceTree = SOURCE_ROOT; };
+		249EA1EF125287A20043BC85 /* TestSubclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSubclass.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,10 @@
 		2406BA21124FAD6A00566522 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				249EA1DF125285BC0043BC85 /* TestClass.h */,
+				249EA1E0125285BC0043BC85 /* TestClass.m */,
+				249EA1EE125287A20043BC85 /* TestSubclass.h */,
+				249EA1EF125287A20043BC85 /* TestSubclass.m */,
 				2406BA3C124FADB500566522 /* main.m */,
 			);
 			path = Source;
@@ -173,6 +183,8 @@
 				244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */,
 				244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */,
 				249EA1D512527DFB0043BC85 /* NSObject+DCTPropertyClearup.m in Sources */,
+				249EA1E1125285BC0043BC85 /* TestClass.m in Sources */,
+				249EA1F0125287A20043BC85 /* TestSubclass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

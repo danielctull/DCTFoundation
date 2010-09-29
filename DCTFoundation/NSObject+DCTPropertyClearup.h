@@ -11,5 +11,6 @@
 @interface NSObject (DCTPropertyClearup)
 
 - (void)dct_deallocProperties;
++ (void)dct_registerForPropertyClearup;
 
 @end
