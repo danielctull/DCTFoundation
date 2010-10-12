@@ -53,4 +53,6 @@
 
 - (NSArray *)dct_splitArrayIntoArraysWithCount:(NSInteger)aCount;
 
+- (NSArray *)dct_sortedArrayUsingKey:(NSString *)key ascending:(BOOL)ascending;
+
 @end
