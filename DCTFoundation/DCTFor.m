@@ -41,14 +41,18 @@
 
 + (void)first:(NSInteger)firstNItems in:(id)collection do:(DCTForItemisedWork)work {
 	
-	NSInteger current = 0;
+	NSInteger i = 0;
+	
+	BOOL stop = NO;
 	
 	for (id o in collection) {
 		
-		work(o);
+		work(o, i, &stop);
 		
-		current++;
-		if (current >= firstNItems) return;
+		if (stop) return;
+		
+		i++;
+		if (i >= firstNItems) return;
 	}
 }
 

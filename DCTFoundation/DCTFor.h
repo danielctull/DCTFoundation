@@ -36,7 +36,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^DCTForItemisedWork)(id o);
+typedef void (^DCTForItemisedWork)(id o, NSInteger i, BOOL *stop);
 
 @interface DCTFor : NSObject {}
 
