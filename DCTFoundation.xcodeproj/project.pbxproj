@@ -13,6 +13,7 @@
 		244DAECD12522C2D00A7255B /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAECC12522C2D00A7255B /* DCTStack.m */; };
 		244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED012522CE400A7255B /* NSArray+DCTExtras.m */; };
 		244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */; };
+		24D547D1126886F9004B38E8 /* DCTFor.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D547D0126886F8004B38E8 /* DCTFor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +39,10 @@
 		244DAECC12522C2D00A7255B /* DCTStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTStack.m; sourceTree = "<group>"; };
 		244DAECF12522CE400A7255B /* NSArray+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCTExtras.h"; sourceTree = "<group>"; };
 		244DAED012522CE400A7255B /* NSArray+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCTExtras.m"; sourceTree = "<group>"; };
-		244DAED512522DED00A7255B /* NSDate+DCTDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSDate+DCTDateComponents.h"; sourceTree = "<group>"; };
+		244DAED512522DED00A7255B /* NSDate+DCTDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DCTDateComponents.h"; sourceTree = "<group>"; };
 		244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DCTDateComponents.m"; sourceTree = "<group>"; };
+		24D547CF126886F8004B38E8 /* DCTFor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFor.h; sourceTree = "<group>"; };
+		24D547D0126886F8004B38E8 /* DCTFor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 		2406BA3F124FADD500566522 /* DCTFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				24D547CF126886F8004B38E8 /* DCTFor.h */,
+				24D547D0126886F8004B38E8 /* DCTFor.m */,
 				244DAEBA12522ADE00A7255B /* DCTQueue.h */,
 				244DAEBB12522ADE00A7255B /* DCTQueue.m */,
 				244DAECB12522C2D00A7255B /* DCTStack.h */,
@@ -167,6 +172,7 @@
 				244DAECD12522C2D00A7255B /* DCTStack.m in Sources */,
 				244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */,
 				244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */,
+				24D547D1126886F9004B38E8 /* DCTFor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
