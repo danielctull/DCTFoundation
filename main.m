@@ -16,10 +16,12 @@ int main (int argc, const char * argv[]) {
 	
 	NSArray *array = [NSArray arrayWithObjects:@"One", @"Two", @"Three", @"Four", nil];
 	
-	[DCTFor first:3 in:array do:^(id o){
+	[DCTFor first:3 in:array do:^(id o, NSInteger i, BOOL *stop){
 		
 		NSLog(@"%@", o);
 		
+		// If you want to stop the loop, call this.
+		*stop = YES;
 	}];
 	
 	[pool drain];
