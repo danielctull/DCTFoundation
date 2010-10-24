@@ -97,4 +97,11 @@
 	return [returnArray autorelease];
 }
 
+- (NSArray *)dct_sortedArrayUsingKey:(NSString *)key ascending:(BOOL)ascending {
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:key ascending:ascending];
+	NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+	[sortDescriptor release];
+	return [self sortedArrayUsingDescriptors:sortDescriptors];
+}
+
 @end
