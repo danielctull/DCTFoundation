@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2406BA2C124FAD6A00566522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2406BA2B124FAD6A00566522 /* Foundation.framework */; };
 		2406BA3D124FADB500566522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2406BA3C124FADB500566522 /* main.m */; };
+		2433FEFD1289521A008C10D2 /* NSObject+DCTKVOExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433FEFC1289521A008C10D2 /* NSObject+DCTKVOExtras.m */; };
 		244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAEBB12522ADE00A7255B /* DCTQueue.m */; };
 		244DAECD12522C2D00A7255B /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAECC12522C2D00A7255B /* DCTStack.m */; };
 		244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED012522CE400A7255B /* NSArray+DCTExtras.m */; };
@@ -34,6 +35,8 @@
 		2406BA2B124FAD6A00566522 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2406BA31124FAD6A00566522 /* DCTFoundation_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTFoundation_Prefix.pch; sourceTree = "<group>"; };
 		2406BA3C124FADB500566522 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		2433FEFB1289521A008C10D2 /* NSObject+DCTKVOExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTKVOExtras.h"; sourceTree = "<group>"; };
+		2433FEFC1289521A008C10D2 /* NSObject+DCTKVOExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTKVOExtras.m"; sourceTree = "<group>"; };
 		244DAEBA12522ADE00A7255B /* DCTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTQueue.h; sourceTree = "<group>"; };
 		244DAEBB12522ADE00A7255B /* DCTQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTQueue.m; sourceTree = "<group>"; };
 		244DAECB12522C2D00A7255B /* DCTStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTStack.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				24768B69127445BF0059E4E4 /* NSError+DCTExtensions.m */,
 				24768B65127445880059E4E4 /* NSObject+DCTPerformSelector.h */,
 				24768B66127445880059E4E4 /* NSObject+DCTPerformSelector.m */,
+				2433FEFB1289521A008C10D2 /* NSObject+DCTKVOExtras.h */,
+				2433FEFC1289521A008C10D2 /* NSObject+DCTKVOExtras.m */,
 			);
 			path = DCTFoundation;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */,
 				24768B67127445880059E4E4 /* NSObject+DCTPerformSelector.m in Sources */,
 				24768B6A127445BF0059E4E4 /* NSError+DCTExtensions.m in Sources */,
+				2433FEFD1289521A008C10D2 /* NSObject+DCTKVOExtras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
