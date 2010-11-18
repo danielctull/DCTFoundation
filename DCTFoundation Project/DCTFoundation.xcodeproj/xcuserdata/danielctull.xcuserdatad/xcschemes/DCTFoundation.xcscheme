@@ -24,7 +24,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2406BA26124FAD6A00566522"
             BuildableName = "DCTFoundation"
-            BlueprintName = "DCTFoundation">
+            BlueprintName = "DCTFoundation"
+            ReferencedContainer = "container:DCTFoundation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
