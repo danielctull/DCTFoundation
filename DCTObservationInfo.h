@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 
 
-@interface DCTObservationInfo : NSObject {}
+@interface DCTObservationInfo : NSObject {
+	id object;
+	NSKeyValueObservingOptions options;
+	NSString *keyPath;
+	void *context;
+}
 
 @property (nonatomic, assign) id object;
 @property (nonatomic, assign) NSKeyValueObservingOptions options;
