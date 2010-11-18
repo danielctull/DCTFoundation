@@ -1,8 +1,8 @@
 /*
- NSError+DCTKVOExtras.m
+ NSDictionary+DCTExtras.h
  DCTFoundation
  
- Created by Daniel Tull on 9.11.2010.
+ Created by Daniel Tull on 18.11.2010.
  
  
  
@@ -34,21 +34,10 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "NSObject+DCTKVOExtras.h"
+#import <Foundation/Foundation.h>
 
 
-@implementation NSObject (DCTKVOExtras)
-
-- (void)dct_changeValueForKey:(NSString *)key withChange:(DCTKeyValueChange)change {
-	[self willChangeValueForKey:key];
-	change();
-	[self didChangeValueForKey:key];
-}
-
-- (void)dct_changeValueForKeys:(NSArray *)keys withChange:(DCTKeyValueChange)change {
-	for (NSString *key in keys) [self willChangeValueForKey:key];
-	change();
-	for (NSString *key in keys) [self didChangeValueForKey:key];
-}
-
+@interface NSDictionary (DCTExtras)
++ (id)dct_dictionaryWithKeysAndObjects:(id)firstKey, ...;
+- (NSArray *)dct_keysForObject:(id)object;
 @end

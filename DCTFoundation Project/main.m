@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSDictionary+DCTExtras.h"
 
 int main (int argc, const char * argv[]) {
 
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	// insert code here...
-	NSLog(@"Hello, World!");
+
+	NSDictionary *dict = [NSDictionary dct_dictionaryWithKeysAndObjects:@"key1", @"value1",
+																		@"key2", @"value2", nil];
+	
+	NSLog(@"%@", dict);
+	
 	[pool drain];
     return 0;
 }

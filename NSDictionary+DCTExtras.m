@@ -1,8 +1,8 @@
 /*
- NSError+DCTKVOExtras.m
+ NSDictionary+DCTExtras.m
  DCTFoundation
  
- Created by Daniel Tull on 9.11.2010.
+ Created by Daniel Tull on 18.11.2010.
  
  
  
@@ -34,21 +34,51 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "NSObject+DCTKVOExtras.h"
+#import "NSDictionary+DCTExtras.h"
 
+@implementation NSDictionary (DCTExtras)
 
-@implementation NSObject (DCTKVOExtras)
-
-- (void)dct_changeValueForKey:(NSString *)key withChange:(DCTKeyValueChange)change {
-	[self willChangeValueForKey:key];
-	change();
-	[self didChangeValueForKey:key];
++ (id)dct_dictionaryWithKeysAndObjects:(id)firstKey, ... {
+	
+	NSMutableArray* keys = [[NSMutableArray alloc] initWithCapacity:1];
+	NSMutableArray* values = [[NSMutableArray alloc] initWithCapacity:1];
+	
+	va_list args;
+	va_start(args, firstKey);
+	
+	id key = firstKey;
+	
+	while ((key)) {
+		
+        [keys addObject:key];
+		[values addObject:va_arg(args, id)];	
+		
+		key = va_arg(args, id);
+	}
+	
+	va_end(args);
+    
+    id dict = [self dictionaryWithObjects:values forKeys:keys];
+	
+	[keys release];
+	[values release];
+	
+	return dict;
 }
 
-- (void)dct_changeValueForKeys:(NSArray *)keys withChange:(DCTKeyValueChange)change {
-	for (NSString *key in keys) [self willChangeValueForKey:key];
-	change();
-	for (NSString *key in keys) [self didChangeValueForKey:key];
+- (NSArray *)dct_keysForObject:(id)object {
+	
+	if (![[self allValues] containsObject:object]) return nil;
+	
+	NSMutableArray *mArray = [[NSMutableArray alloc] init];
+	
+	for (id key in self)
+		if ([[self objectForKey:key] isEqual:object])
+			[mArray addObject:key];
+	
+	NSArray *returnArray = [NSArray arrayWithArray:mArray];
+	[mArray release];
+	return returnArray;
 }
 
 @end
