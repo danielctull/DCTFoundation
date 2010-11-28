@@ -13,7 +13,7 @@
 
 - (void)dct_addObjectsFromArrayIfNew:(NSArray *)array {
 	for (id o in array)
-		[self dct_addNewObject:o];
+		[self dct_addObjectIfNew:o];
 }
 
 - (void)dct_addObjectIfNew:(id)object {
