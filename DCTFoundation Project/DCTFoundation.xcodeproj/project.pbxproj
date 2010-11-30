@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2403A6391295EC690020E40B /* DCTObservationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A6291295EC680020E40B /* DCTObservationInfo.m */; };
+		2403A63A1295EC690020E40B /* DCTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A62B1295EC680020E40B /* DCTQueue.m */; };
+		2403A63B1295EC690020E40B /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A62D1295EC680020E40B /* DCTStack.m */; };
+		2403A63C1295EC690020E40B /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A62F1295EC680020E40B /* NSArray+DCTExtras.m */; };
+		2403A63D1295EC690020E40B /* NSDate+DCTDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A6311295EC680020E40B /* NSDate+DCTDateComponents.m */; };
+		2403A63E1295EC690020E40B /* NSError+DCTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A6331295EC680020E40B /* NSError+DCTExtensions.m */; };
+		2403A63F1295EC690020E40B /* NSObject+DCTKVOExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A6351295EC680020E40B /* NSObject+DCTKVOExtras.m */; };
+		2403A6401295EC690020E40B /* NSObject+DCTPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A6371295EC680020E40B /* NSObject+DCTPerformSelector.m */; };
+		2403A6431295ECBB0020E40B /* NSDictionary+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2403A6421295ECBB0020E40B /* NSDictionary+DCTExtras.m */; };
 		2406BA2C124FAD6A00566522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2406BA2B124FAD6A00566522 /* Foundation.framework */; };
 		2406BA3D124FADB500566522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2406BA3C124FADB500566522 /* main.m */; };
-		2433FEFD1289521A008C10D2 /* NSObject+DCTKVOExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 2433FEFC1289521A008C10D2 /* NSObject+DCTKVOExtras.m */; };
-		244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAEBB12522ADE00A7255B /* DCTQueue.m */; };
-		244DAECD12522C2D00A7255B /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAECC12522C2D00A7255B /* DCTStack.m */; };
-		244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED012522CE400A7255B /* NSArray+DCTExtras.m */; };
-		244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */; };
-		24768B67127445880059E4E4 /* NSObject+DCTPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 24768B66127445880059E4E4 /* NSObject+DCTPerformSelector.m */; };
-		24768B6A127445BF0059E4E4 /* NSError+DCTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 24768B69127445BF0059E4E4 /* NSError+DCTExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,24 +33,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2403A6281295EC680020E40B /* DCTObservationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTObservationInfo.h; sourceTree = "<group>"; };
+		2403A6291295EC680020E40B /* DCTObservationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTObservationInfo.m; sourceTree = "<group>"; };
+		2403A62A1295EC680020E40B /* DCTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTQueue.h; sourceTree = "<group>"; };
+		2403A62B1295EC680020E40B /* DCTQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTQueue.m; sourceTree = "<group>"; };
+		2403A62C1295EC680020E40B /* DCTStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTStack.h; sourceTree = "<group>"; };
+		2403A62D1295EC680020E40B /* DCTStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTStack.m; sourceTree = "<group>"; };
+		2403A62E1295EC680020E40B /* NSArray+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCTExtras.h"; sourceTree = "<group>"; };
+		2403A62F1295EC680020E40B /* NSArray+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCTExtras.m"; sourceTree = "<group>"; };
+		2403A6301295EC680020E40B /* NSDate+DCTDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DCTDateComponents.h"; sourceTree = "<group>"; };
+		2403A6311295EC680020E40B /* NSDate+DCTDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DCTDateComponents.m"; sourceTree = "<group>"; };
+		2403A6321295EC680020E40B /* NSError+DCTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DCTExtensions.h"; sourceTree = "<group>"; };
+		2403A6331295EC680020E40B /* NSError+DCTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DCTExtensions.m"; sourceTree = "<group>"; };
+		2403A6341295EC680020E40B /* NSObject+DCTKVOExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTKVOExtras.h"; sourceTree = "<group>"; };
+		2403A6351295EC680020E40B /* NSObject+DCTKVOExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTKVOExtras.m"; sourceTree = "<group>"; };
+		2403A6361295EC680020E40B /* NSObject+DCTPerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTPerformSelector.h"; sourceTree = "<group>"; };
+		2403A6371295EC680020E40B /* NSObject+DCTPerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTPerformSelector.m"; sourceTree = "<group>"; };
+		2403A6411295ECBB0020E40B /* NSDictionary+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DCTExtras.h"; sourceTree = "<group>"; };
+		2403A6421295ECBB0020E40B /* NSDictionary+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DCTExtras.m"; sourceTree = "<group>"; };
 		2406BA27124FAD6A00566522 /* DCTFoundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DCTFoundation; sourceTree = BUILT_PRODUCTS_DIR; };
 		2406BA2B124FAD6A00566522 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2406BA31124FAD6A00566522 /* DCTFoundation_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTFoundation_Prefix.pch; sourceTree = "<group>"; };
 		2406BA3C124FADB500566522 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
-		2433FEFB1289521A008C10D2 /* NSObject+DCTKVOExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTKVOExtras.h"; sourceTree = "<group>"; };
-		2433FEFC1289521A008C10D2 /* NSObject+DCTKVOExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTKVOExtras.m"; sourceTree = "<group>"; };
-		244DAEBA12522ADE00A7255B /* DCTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTQueue.h; sourceTree = "<group>"; };
-		244DAEBB12522ADE00A7255B /* DCTQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTQueue.m; sourceTree = "<group>"; };
-		244DAECB12522C2D00A7255B /* DCTStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTStack.h; sourceTree = "<group>"; };
-		244DAECC12522C2D00A7255B /* DCTStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTStack.m; sourceTree = "<group>"; };
-		244DAECF12522CE400A7255B /* NSArray+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCTExtras.h"; sourceTree = "<group>"; };
-		244DAED012522CE400A7255B /* NSArray+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCTExtras.m"; sourceTree = "<group>"; };
-		244DAED512522DED00A7255B /* NSDate+DCTDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DCTDateComponents.h"; sourceTree = "<group>"; };
-		244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DCTDateComponents.m"; sourceTree = "<group>"; };
-		24768B65127445880059E4E4 /* NSObject+DCTPerformSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTPerformSelector.h"; sourceTree = "<group>"; };
-		24768B66127445880059E4E4 /* NSObject+DCTPerformSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTPerformSelector.m"; sourceTree = "<group>"; };
-		24768B68127445BF0059E4E4 /* NSError+DCTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DCTExtensions.h"; sourceTree = "<group>"; };
-		24768B69127445BF0059E4E4 /* NSError+DCTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DCTExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +69,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2403A4811295EC670020E40B /* DCTFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				2403A6281295EC680020E40B /* DCTObservationInfo.h */,
+				2403A6291295EC680020E40B /* DCTObservationInfo.m */,
+				2403A62A1295EC680020E40B /* DCTQueue.h */,
+				2403A62B1295EC680020E40B /* DCTQueue.m */,
+				2403A62C1295EC680020E40B /* DCTStack.h */,
+				2403A62D1295EC680020E40B /* DCTStack.m */,
+				2403A62E1295EC680020E40B /* NSArray+DCTExtras.h */,
+				2403A62F1295EC680020E40B /* NSArray+DCTExtras.m */,
+				2403A6301295EC680020E40B /* NSDate+DCTDateComponents.h */,
+				2403A6311295EC680020E40B /* NSDate+DCTDateComponents.m */,
+				2403A6411295ECBB0020E40B /* NSDictionary+DCTExtras.h */,
+				2403A6421295ECBB0020E40B /* NSDictionary+DCTExtras.m */,
+				2403A6321295EC680020E40B /* NSError+DCTExtensions.h */,
+				2403A6331295EC680020E40B /* NSError+DCTExtensions.m */,
+				2403A6341295EC680020E40B /* NSObject+DCTKVOExtras.h */,
+				2403A6351295EC680020E40B /* NSObject+DCTKVOExtras.m */,
+				2403A6361295EC680020E40B /* NSObject+DCTPerformSelector.h */,
+				2403A6371295EC680020E40B /* NSObject+DCTPerformSelector.m */,
+			);
+			name = DCTFoundation;
+			path = /Users/danielctull/Dropbox/Programs/Cocoa/Frameworks/DCTFoundation;
+			sourceTree = "<absolute>";
+		};
 		2406BA1A124FAD6A00566522 = {
 			isa = PBXGroup;
 			children = (
-				2406BA3F124FADD500566522 /* DCTFoundation */,
+				2403A4811295EC670020E40B /* DCTFoundation */,
 				2406BA21124FAD6A00566522 /* Source */,
 				2406BA28124FAD6A00566522 /* Products */,
 				2406BA2A124FAD6A00566522 /* Frameworks */,
@@ -104,27 +136,6 @@
 				2406BA31124FAD6A00566522 /* DCTFoundation_Prefix.pch */,
 			);
 			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		2406BA3F124FADD500566522 /* DCTFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				244DAEBA12522ADE00A7255B /* DCTQueue.h */,
-				244DAEBB12522ADE00A7255B /* DCTQueue.m */,
-				244DAECB12522C2D00A7255B /* DCTStack.h */,
-				244DAECC12522C2D00A7255B /* DCTStack.m */,
-				244DAECF12522CE400A7255B /* NSArray+DCTExtras.h */,
-				244DAED012522CE400A7255B /* NSArray+DCTExtras.m */,
-				244DAED512522DED00A7255B /* NSDate+DCTDateComponents.h */,
-				244DAED612522DED00A7255B /* NSDate+DCTDateComponents.m */,
-				24768B68127445BF0059E4E4 /* NSError+DCTExtensions.h */,
-				24768B69127445BF0059E4E4 /* NSError+DCTExtensions.m */,
-				24768B65127445880059E4E4 /* NSObject+DCTPerformSelector.h */,
-				24768B66127445880059E4E4 /* NSObject+DCTPerformSelector.m */,
-				2433FEFB1289521A008C10D2 /* NSObject+DCTKVOExtras.h */,
-				2433FEFC1289521A008C10D2 /* NSObject+DCTKVOExtras.m */,
-			);
-			path = DCTFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,13 +189,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2406BA3D124FADB500566522 /* main.m in Sources */,
-				244DAEBC12522ADE00A7255B /* DCTQueue.m in Sources */,
-				244DAECD12522C2D00A7255B /* DCTStack.m in Sources */,
-				244DAED112522CE400A7255B /* NSArray+DCTExtras.m in Sources */,
-				244DAED712522DED00A7255B /* NSDate+DCTDateComponents.m in Sources */,
-				24768B67127445880059E4E4 /* NSObject+DCTPerformSelector.m in Sources */,
-				24768B6A127445BF0059E4E4 /* NSError+DCTExtensions.m in Sources */,
-				2433FEFD1289521A008C10D2 /* NSObject+DCTKVOExtras.m in Sources */,
+				2403A6391295EC690020E40B /* DCTObservationInfo.m in Sources */,
+				2403A63A1295EC690020E40B /* DCTQueue.m in Sources */,
+				2403A63B1295EC690020E40B /* DCTStack.m in Sources */,
+				2403A63C1295EC690020E40B /* NSArray+DCTExtras.m in Sources */,
+				2403A63D1295EC690020E40B /* NSDate+DCTDateComponents.m in Sources */,
+				2403A63E1295EC690020E40B /* NSError+DCTExtensions.m in Sources */,
+				2403A63F1295EC690020E40B /* NSObject+DCTKVOExtras.m in Sources */,
+				2403A6401295EC690020E40B /* NSObject+DCTPerformSelector.m in Sources */,
+				2403A6431295ECBB0020E40B /* NSDictionary+DCTExtras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
