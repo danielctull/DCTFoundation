@@ -20,6 +20,10 @@ To add the production branch rather than master, simply use the -b flag as shown
 
 bc. git submodule add -b production git://github.com/danielctull/DCTFoundation.git
 
+To keep up to date with the latest changes `cd` into the directory that contains this submodule and pull the newest changes as usual
+
+bc. git pull origin
+
 h3. Artefacts
 
 Sometimes, there may be artefacts left over when switching from master to production. These are files that are ignored by git and are easily cleaned up by running
