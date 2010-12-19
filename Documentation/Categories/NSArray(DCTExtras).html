@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSArray(DCTExtras) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc" />
+	</head>
+	<body>
+		<article>
+			<div id="header">
+				<div class="section-header">
+					<h1 class="title title-header">NSArray(DCTExtras) Category Reference</h1>
+				</div>		
+			</div>
+			<div id="container">	
+				
+				<div class="section section-specification"><table cellspacing="0"><tbody>
+					<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSArray+DCTExtras.h</td>
+</tr>
+					</tbody></table></div>
+				
+				
+				
+				
+				
+				
+				<div class="section section-tasks">
+					<h2 class="subtitle subtitle-tasks">Tasks</h2>
+					
+					
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_isEmpty">- dct_isEmpty</a></code>
+		<span class="tooltip"> Returns whether or not the receiving array is empty. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_firstObject">- dct_firstObject</a></code>
+		<span class="tooltip"> Returns the first object in the array or nil if the receiver is empty. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_subarrayWithObjectsOfClass:">- dct_subarrayWithObjectsOfClass:</a></code>
+		<span class="tooltip"> Returns an array containing only objects which are the kind of the given class. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_containsObjectOfClass:">- dct_containsObjectOfClass:</a></code>
+		<span class="tooltip"> Looks in the receiver for an object of the given class and returns YES if one is found. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_splitArrayIntoArraysWithCount:">- dct_splitArrayIntoArraysWithCount:</a></code>
+		<span class="tooltip"> Splits the receiver into sub-arrays of the given count. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_sortedArrayUsingKey:ascending:">- dct_sortedArrayUsingKey:ascending:</a></code>
+		<span class="tooltip"> Creates a sorted array of objects in the receiver, by putting the given key into a sort descriptor array. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_containsObjectOfClass:" title="dct_containsObjectOfClass:"></a>
+	<h3 class="subsubtitle method-title">dct_containsObjectOfClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Looks in the receiver for an object of the given class and returns YES if one is found. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)dct_containsObjectOfClass:(Class)<em>aClass</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aClass</em></dt>
+			<dd> The class to check objects for. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> YES if receiver contains an object of the given class, NO otherwise. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+DCTExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_firstObject" title="dct_firstObject"></a>
+	<h3 class="subsubtitle method-title">dct_firstObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Returns the first object in the array or nil if the receiver is empty. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)dct_firstObject</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The first object in the array or nil. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+DCTExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_isEmpty" title="dct_isEmpty"></a>
+	<h3 class="subsubtitle method-title">dct_isEmpty</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Returns whether or not the receiving array is empty. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)dct_isEmpty</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> A boolean indicating whether or not the receiving array is empty. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+DCTExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_sortedArrayUsingKey:ascending:" title="dct_sortedArrayUsingKey:ascending:"></a>
+	<h3 class="subsubtitle method-title">dct_sortedArrayUsingKey:ascending:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a sorted array of objects in the receiver, by putting the given key into a sort descriptor array. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)dct_sortedArrayUsingKey:(NSString *)<em>key</em> ascending:(BOOL)<em>ascending</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd> The key to sort each of the objects with. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ascending</em></dt>
+			<dd> Boolean to say whether the sorted array should be ascending or not (descending). </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> Sorted array. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+DCTExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_splitArrayIntoArraysWithCount:" title="dct_splitArrayIntoArraysWithCount:"></a>
+	<h3 class="subsubtitle method-title">dct_splitArrayIntoArraysWithCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Splits the receiver into sub-arrays of the given count. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)dct_splitArrayIntoArraysWithCount:(NSInteger)<em>aCount</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aCount</em></dt>
+			<dd> The maximum length each of the subarrays should be. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> An array of the sub-arrays. </p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		
+		<p> Splits the receiver into sub-arrays of the given count. </p>
+		
+		<p> If the receiver has 12 objects, and you give a count of 5 you will be returned an array with 3 arrays inside, with counts of 5, 5 and 2. If you gave a count of 6, you would be returned an array with 2 sub-arrays, both with a count of 6. </p>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+DCTExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_subarrayWithObjectsOfClass:" title="dct_subarrayWithObjectsOfClass:"></a>
+	<h3 class="subsubtitle method-title">dct_subarrayWithObjectsOfClass:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Returns an array containing only objects which are the kind of the given class. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)dct_subarrayWithObjectsOfClass:(Class)<em>aClass</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aClass</em></dt>
+			<dd> The class to check objects for. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> Subarray containing only objects which are kind of the given class. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSArray+DCTExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				
+			</div>
+			<div id="footer">
+				<hr />
+				<div class="footer-copyright">
+					<p><span class="copyright">&copy; 2010 Daniel Tull. All rights reserved. (Last updated: 2010-12-19)</span><br />
+					<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc</a>.</span></p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

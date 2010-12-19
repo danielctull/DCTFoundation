@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DCTStack Class Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc" />
+	</head>
+	<body>
+		<article>
+			<div id="header">
+				<div class="section-header">
+					<h1 class="title title-header">DCTStack Class Reference</h1>
+				</div>		
+			</div>
+			<div id="container">	
+				
+				<div class="section section-specification"><table cellspacing="0"><tbody>
+					<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">DCTStack.h</td>
+</tr>
+					</tbody></table></div>
+				
+				
+				
+				<div class="section section-overview">
+					<h2 class="subtitle subtitle-overview">Overview</h2>
+					
+<p> This represents a stack (last in, first out) data structure in computer science. It has the push and  <a href="#//api/name/pop">pop</a> operations usually found in stacks, plus a few other methods to make it more useful. </p>
+
+				</div>
+				
+				
+				
+				
+				<div class="section section-tasks">
+					<h2 class="subtitle subtitle-tasks">Tasks</h2>
+					
+					<h3 class="subsubtitle task-title">Standard stack operations</h3>
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count">- count</a></code>
+		<span class="tooltip"> The number of items on the stack. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/push:">- push:</a></code>
+		<span class="tooltip"> Pushes the given object onto the  <a href="#//api/name/top">top</a> of the stack. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pop">- pop</a></code>
+		<span class="tooltip"> Removes the  <a href="#//api/name/top">top</a> object from the stack. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/top">- top</a></code>
+		<span class="tooltip"> Returns the  <a href="#//api/name/top">top</a> object without popping it from the stack. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+					<h3 class="subsubtitle task-title">Extra functionality</h3>
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allObjects">- allObjects</a></code>
+		<span class="tooltip"> Returns an NSArray of all the objects in the stack. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popToObject:">- popToObject:</a></code>
+		<span class="tooltip"> Pops the stack until it reaches the given object. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popToRootObject">- popToRootObject</a></code>
+		<span class="tooltip"> Pops the stack until it has only one item left. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/allObjects" title="allObjects"></a>
+	<h3 class="subsubtitle method-title">allObjects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Returns an NSArray of all the objects in the stack. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)allObjects</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> An array of all the objects in the stack. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/count" title="count"></a>
+	<h3 class="subsubtitle method-title">count</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The number of items on the stack. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)count</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The number of items on the stack. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/pop" title="pop"></a>
+	<h3 class="subsubtitle method-title">pop</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Removes the  <a href="#//api/name/top">top</a> object from the stack. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)pop</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The object that has just been popped off the  <a href="#//api/name/top">top</a> of the stack. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/popToObject:" title="popToObject:"></a>
+	<h3 class="subsubtitle method-title">popToObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Pops the stack until it reaches the given object. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)popToObject:(id)<em>object</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd> The object to  <a href="#//api/name/pop">pop</a> to in the stack. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> An array of all objects that have been removed from the stack. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/popToRootObject" title="popToRootObject"></a>
+	<h3 class="subsubtitle method-title">popToRootObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Pops the stack until it has only one item left. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)popToRootObject</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> An array of all objects that have been removed from the stack. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/push:" title="push:"></a>
+	<h3 class="subsubtitle method-title">push:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Pushes the given object onto the  <a href="#//api/name/top">top</a> of the stack. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)push:(id)<em>object</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd> The object to be pushed onto the stack. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/top" title="top"></a>
+	<h3 class="subsubtitle method-title">top</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Returns the  <a href="#//api/name/top">top</a> object without popping it from the stack. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)top</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The  <a href="#//api/name/top">top</a> object on the stack. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">DCTStack.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				
+			</div>
+			<div id="footer">
+				<hr />
+				<div class="footer-copyright">
+					<p><span class="copyright">&copy; 2010 Daniel Tull. All rights reserved. (Last updated: 2010-12-19)</span><br />
+					<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc</a>.</span></p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

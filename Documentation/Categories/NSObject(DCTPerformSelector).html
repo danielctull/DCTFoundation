@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSObject(DCTPerformSelector) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc" />
+	</head>
+	<body>
+		<article>
+			<div id="header">
+				<div class="section-header">
+					<h1 class="title title-header">NSObject(DCTPerformSelector) Category Reference</h1>
+				</div>		
+			</div>
+			<div id="container">	
+				
+				<div class="section section-specification"><table cellspacing="0"><tbody>
+					<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSObject+DCTPerformSelector.h</td>
+</tr>
+					</tbody></table></div>
+				
+				
+				
+				<div class="section section-overview">
+					<h2 class="subtitle subtitle-overview">Overview</h2>
+					
+<p> Helper methods to handle checks before perfoming selectors. </p>
+
+				</div>
+				
+				
+				
+				
+				<div class="section section-tasks">
+					<h2 class="subtitle subtitle-tasks">Tasks</h2>
+					
+					<h3 class="subsubtitle task-title">Protocol Checking</h3>
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_performSelector:ifConformsToProtocol:">- dct_performSelector:ifConformsToProtocol:</a></code>
+		<span class="tooltip"> If the receiver conforms to the given protocol,  <a href="#//api/name/dct_safePerformSelector:">dct_safePerformSelector:</a> is called with the given selector. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_performSelector:withObject:ifConformsToProtocol:">- dct_performSelector:withObject:ifConformsToProtocol:</a></code>
+		<span class="tooltip"> If the receiver conforms to the given protocol,  <a href="#//api/name/dct_safePerformSelector:withObject:">dct_safePerformSelector:withObject:</a> is called with the given selector and object. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+					<h3 class="subsubtitle task-title">Selector Checking</h3>
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_safePerformSelector:">- dct_safePerformSelector:</a></code>
+		<span class="tooltip"> Checks to make sure the selector exists before calling performSelector: with the given selector. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_safePerformSelector:withObject:">- dct_safePerformSelector:withObject:</a></code>
+		<span class="tooltip"> Checks to make sure the selector exists before calling performSelector:withObject: with the given selector and object. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_performSelector:ifConformsToProtocol:" title="dct_performSelector:ifConformsToProtocol:"></a>
+	<h3 class="subsubtitle method-title">dct_performSelector:ifConformsToProtocol:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> If the receiver conforms to the given protocol,  <a href="#//api/name/dct_safePerformSelector:">dct_safePerformSelector:</a> is called with the given selector. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)dct_performSelector:(SEL)<em>selector</em> ifConformsToProtocol:(Protocol *)<em>protocol</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd> The selector to perform. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>protocol</em></dt>
+			<dd> The protocol that the receiving object should conform to. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The return from  <a href="#//api/name/dct_safePerformSelector:">dct_safePerformSelector:</a> or nil if the object doesn&apos;t conform to the protocol. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+DCTPerformSelector.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_performSelector:withObject:ifConformsToProtocol:" title="dct_performSelector:withObject:ifConformsToProtocol:"></a>
+	<h3 class="subsubtitle method-title">dct_performSelector:withObject:ifConformsToProtocol:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> If the receiver conforms to the given protocol,  <a href="#//api/name/dct_safePerformSelector:withObject:">dct_safePerformSelector:withObject:</a> is called with the given selector and object. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)dct_performSelector:(SEL)<em>selector</em> withObject:(id)<em>object</em> ifConformsToProtocol:(Protocol *)<em>protocol</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd> The selector to perform. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd> The object to use. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>protocol</em></dt>
+			<dd> The protocol that the receiving object should conform to. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The return from  <a href="#//api/name/dct_safePerformSelector:withObject:">dct_safePerformSelector:withObject:</a> or nil if the object doesn&apos;t conform to the protocol. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+DCTPerformSelector.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_safePerformSelector:" title="dct_safePerformSelector:"></a>
+	<h3 class="subsubtitle method-title">dct_safePerformSelector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Checks to make sure the selector exists before calling performSelector: with the given selector. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)dct_safePerformSelector:(SEL)<em>selector</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd> The selector to perform. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The return from performSelector: or nil if the object doesn&apos;t conform to the protocol. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+DCTPerformSelector.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_safePerformSelector:withObject:" title="dct_safePerformSelector:withObject:"></a>
+	<h3 class="subsubtitle method-title">dct_safePerformSelector:withObject:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Checks to make sure the selector exists before calling performSelector:withObject: with the given selector and object. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)dct_safePerformSelector:(SEL)<em>selector</em> withObject:(id)<em>object</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selector</em></dt>
+			<dd> The selector to perform. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>object</em></dt>
+			<dd> The object to use. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The return from performWithSelector:withObject: or nil if the selector doesn&apos;t exist. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+DCTPerformSelector.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				
+			</div>
+			<div id="footer">
+				<hr />
+				<div class="footer-copyright">
+					<p><span class="copyright">&copy; 2010 Daniel Tull. All rights reserved. (Last updated: 2010-12-19)</span><br />
+					<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc</a>.</span></p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

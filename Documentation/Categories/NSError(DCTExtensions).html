@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSError(DCTExtensions) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc" />
+	</head>
+	<body>
+		<article>
+			<div id="header">
+				<div class="section-header">
+					<h1 class="title title-header">NSError(DCTExtensions) Category Reference</h1>
+				</div>		
+			</div>
+			<div id="container">	
+				
+				<div class="section section-specification"><table cellspacing="0"><tbody>
+					<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSError+DCTExtensions.h</td>
+</tr>
+					</tbody></table></div>
+				
+				
+				
+				<div class="section section-overview">
+					<h2 class="subtitle subtitle-overview">Overview</h2>
+					
+<p> Convenience methods for creating NSErrors. </p>
+
+				</div>
+				
+				
+				
+				
+				<div class="section section-tasks">
+					<h2 class="subtitle subtitle-tasks">Tasks</h2>
+					
+					
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_errorWithDomain:code:localizedDescription:localizedFailureReason:localizedRecoveryOptions:localizedRecoverySuggestion:">+ dct_errorWithDomain:code:localizedDescription:localizedFailureReason:localizedRecoveryOptions:localizedRecoverySuggestion:</a></code>
+		<span class="tooltip"> Convenience method for creating an NSError. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_errorWithDomain:code:localizedDescription:">+ dct_errorWithDomain:code:localizedDescription:</a></code>
+		<span class="tooltip"> Convenience method for creating an NSError. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Class Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_errorWithDomain:code:localizedDescription:" title="dct_errorWithDomain:code:localizedDescription:"></a>
+	<h3 class="subsubtitle method-title">dct_errorWithDomain:code:localizedDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Convenience method for creating an NSError. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)dct_errorWithDomain:(NSString *)<em>domain</em> code:(NSInteger)<em>code</em> localizedDescription:(NSString *)<em>localizedDescription</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>domain</em></dt>
+			<dd> String to use as the domain. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>code</em></dt>
+			<dd> Integer to use as the error code. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localizedDescription</em></dt>
+			<dd> String to use as the localized description. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSError+DCTExtensions.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_errorWithDomain:code:localizedDescription:localizedFailureReason:localizedRecoveryOptions:localizedRecoverySuggestion:" title="dct_errorWithDomain:code:localizedDescription:localizedFailureReason:localizedRecoveryOptions:localizedRecoverySuggestion:"></a>
+	<h3 class="subsubtitle method-title">dct_errorWithDomain:code:localizedDescription:localizedFailureReason:localizedRecoveryOptions:localizedRecoverySuggestion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Convenience method for creating an NSError. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (id)dct_errorWithDomain:(NSString *)<em>domain</em> code:(NSInteger)<em>code</em> localizedDescription:(NSString *)<em>localizedDescription</em> localizedFailureReason:(NSString *)<em>localizedFailureReason</em> localizedRecoveryOptions:(NSArray *)<em>localizedRecoveryOptions</em> localizedRecoverySuggestion:(NSString *)<em>localizedRecoverySuggestion</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>domain</em></dt>
+			<dd> String to use as the domain. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>code</em></dt>
+			<dd> Integer to use as the error code. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localizedDescription</em></dt>
+			<dd> String to use as the localized description. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localizedFailureReason</em></dt>
+			<dd> String to use as the reason. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localizedRecoveryOptions</em></dt>
+			<dd> Array of options. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localizedRecoverySuggestion</em></dt>
+			<dd> String suggestion. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSError+DCTExtensions.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
+			<div id="footer">
+				<hr />
+				<div class="footer-copyright">
+					<p><span class="copyright">&copy; 2010 Daniel Tull. All rights reserved. (Last updated: 2010-12-19)</span><br />
+					<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc</a>.</span></p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

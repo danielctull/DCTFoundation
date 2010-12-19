@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSObject(DCTKVOExtras) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc" />
+	</head>
+	<body>
+		<article>
+			<div id="header">
+				<div class="section-header">
+					<h1 class="title title-header">NSObject(DCTKVOExtras) Category Reference</h1>
+				</div>		
+			</div>
+			<div id="container">	
+				
+				<div class="section section-specification"><table cellspacing="0"><tbody>
+					<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSObject+DCTKVOExtras.h</td>
+</tr>
+					</tbody></table></div>
+				
+				
+				
+				<div class="section section-overview">
+					<h2 class="subtitle subtitle-overview">Overview</h2>
+					
+<p> Helper methods to handle key-value coding calls. </p>
+
+				</div>
+				
+				
+				
+				
+				<div class="section section-tasks">
+					<h2 class="subtitle subtitle-tasks">Tasks</h2>
+					
+					
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_changeValueForKey:withChange:">- dct_changeValueForKey:withChange:</a></code>
+		<span class="tooltip"> Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for the given key either side of the change block. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_changeValueForKeys:withChange:">- dct_changeValueForKeys:withChange:</a></code>
+		<span class="tooltip"> Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for each key in the array of keys either side of the change block. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_changeValueForKey:withChange:" title="dct_changeValueForKey:withChange:"></a>
+	<h3 class="subsubtitle method-title">dct_changeValueForKey:withChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for the given key either side of the change block. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dct_changeValueForKey:(NSString *)<em>key</em> withChange:(DCTKeyValueChange)<em>change</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd> The key that is changed in the change block. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>change</em></dt>
+			<dd> The change block that performs the change. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		
+		<p> Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for the given key either side of the change block. </p>
+		
+		<p> DCTKeyValueChange is a block defined as: </p>
+		
+		<p> <code> typedef void (^DCTKeyValueChange) (); </code></p>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+DCTKVOExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_changeValueForKeys:withChange:" title="dct_changeValueForKeys:withChange:"></a>
+	<h3 class="subsubtitle method-title">dct_changeValueForKeys:withChange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for each key in the array of keys either side of the change block. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)dct_changeValueForKeys:(NSArray *)<em>keys</em> withChange:(DCTKeyValueChange)<em>change</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>keys</em></dt>
+			<dd> An array of keys that are changed in the change block. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>change</em></dt>
+			<dd> The change block that performs the change. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		
+		<p> Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for each key in the array of keys either side of the change block. </p>
+		
+		<p> DCTKeyValueChange is a block defined as: </p>
+		
+		<p> <code> typedef void (^DCTKeyValueChange) (); </code></p>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+DCTKVOExtras.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				
+			</div>
+			<div id="footer">
+				<hr />
+				<div class="footer-copyright">
+					<p><span class="copyright">&copy; 2010 Daniel Tull. All rights reserved. (Last updated: 2010-12-19)</span><br />
+					<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc</a>.</span></p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

@@ -1,0 +1,944 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSDate(DCTDateComponents) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc" />
+	</head>
+	<body>
+		<article>
+			<div id="header">
+				<div class="section-header">
+					<h1 class="title title-header">NSDate(DCTDateComponents) Category Reference</h1>
+				</div>		
+			</div>
+			<div id="container">	
+				
+				<div class="section section-specification"><table cellspacing="0"><tbody>
+					<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSDate+DCTDateComponents.h</td>
+</tr>
+					</tbody></table></div>
+				
+				
+				
+				<div class="section section-overview">
+					<h2 class="subtitle subtitle-overview">Overview</h2>
+					
+<p> An extension to NSDate to have easier access to the individual components based on the gregorian calendar. </p>
+
+				</div>
+				
+				
+				
+				
+				<div class="section section-tasks">
+					<h2 class="subtitle subtitle-tasks">Tasks</h2>
+					
+					<h3 class="subsubtitle task-title">Other Methods</h3>
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_gregorianCalendarComponents">- dct_gregorianCalendarComponents</a></code>
+		<span class="tooltip"> @name Getting Gregorian date components */ </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_second">- dct_second</a></code>
+		<span class="tooltip"> The second component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_minute">- dct_minute</a></code>
+		<span class="tooltip"> The minute component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_hour">- dct_hour</a></code>
+		<span class="tooltip"> The hour component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_day">- dct_day</a></code>
+		<span class="tooltip"> The day component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_weekday">- dct_weekday</a></code>
+		<span class="tooltip"> The weekday component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_weekdayOrdinal">- dct_weekdayOrdinal</a></code>
+		<span class="tooltip"> The weekdayOrdinal component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_week">- dct_week</a></code>
+		<span class="tooltip"> The week component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_month">- dct_month</a></code>
+		<span class="tooltip"> The month component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_year">- dct_year</a></code>
+		<span class="tooltip"> The year component of the receiver. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_era">- dct_era</a></code>
+		<span class="tooltip"> The era component of the receiver. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+					<h3 class="subsubtitle task-title">Creating a date</h3>
+
+					<ul class="task-list">
+						<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_dateWithYear:">+ dct_dateWithYear:</a></code>
+		<span class="tooltip"> Creates a data with a year. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_dateWithYear:month:">+ dct_dateWithYear:month:</a></code>
+		<span class="tooltip"> Creates a data with a year and month. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_dateWithYear:month:day:">+ dct_dateWithYear:month:day:</a></code>
+		<span class="tooltip"> Creates a data with a year, month and day. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_dateWithYear:month:day:hour:">+ dct_dateWithYear:month:day:hour:</a></code>
+		<span class="tooltip"> Creates a data with a year, month, day and hour. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_dateWithYear:month:day:hour:minute:">+ dct_dateWithYear:month:day:hour:minute:</a></code>
+		<span class="tooltip"> Creates a data with a year, month, day, hour and minute. </span>
+	</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dct_dateWithYear:month:day:hour:minute:second:">+ dct_dateWithYear:month:day:hour:minute:second:</a></code>
+		<span class="tooltip"> Creates a data with a year, month, day, hour, minute and second. </span>
+	</span>
+	
+</li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Class Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_dateWithYear:" title="dct_dateWithYear:"></a>
+	<h3 class="subsubtitle method-title">dct_dateWithYear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a data with a year. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dct_dateWithYear:(NSInteger)<em>year</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd> The year of the date. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The newly created date. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_dateWithYear:month:" title="dct_dateWithYear:month:"></a>
+	<h3 class="subsubtitle method-title">dct_dateWithYear:month:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a data with a year and month. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dct_dateWithYear:(NSInteger)<em>year</em> month:(NSInteger)<em>month</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd> The year of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>month</em></dt>
+			<dd> The month of the date. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The newly created date. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_dateWithYear:month:day:" title="dct_dateWithYear:month:day:"></a>
+	<h3 class="subsubtitle method-title">dct_dateWithYear:month:day:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a data with a year, month and day. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dct_dateWithYear:(NSInteger)<em>year</em> month:(NSInteger)<em>month</em> day:(NSInteger)<em>day</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd> The year of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>month</em></dt>
+			<dd> The month of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>day</em></dt>
+			<dd> The day of the date. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The newly created date. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_dateWithYear:month:day:hour:" title="dct_dateWithYear:month:day:hour:"></a>
+	<h3 class="subsubtitle method-title">dct_dateWithYear:month:day:hour:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a data with a year, month, day and hour. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dct_dateWithYear:(NSInteger)<em>year</em> month:(NSInteger)<em>month</em> day:(NSInteger)<em>day</em> hour:(NSInteger)<em>hour</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd> The year of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>month</em></dt>
+			<dd> The month of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>day</em></dt>
+			<dd> The day of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hour</em></dt>
+			<dd> The hour of the date. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The newly created date. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_dateWithYear:month:day:hour:minute:" title="dct_dateWithYear:month:day:hour:minute:"></a>
+	<h3 class="subsubtitle method-title">dct_dateWithYear:month:day:hour:minute:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a data with a year, month, day, hour and minute. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dct_dateWithYear:(NSInteger)<em>year</em> month:(NSInteger)<em>month</em> day:(NSInteger)<em>day</em> hour:(NSInteger)<em>hour</em> minute:(NSInteger)<em>minute</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd> The year of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>month</em></dt>
+			<dd> The month of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>day</em></dt>
+			<dd> The day of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hour</em></dt>
+			<dd> The hour of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minute</em></dt>
+			<dd> The minute of the date. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The newly created date. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_dateWithYear:month:day:hour:minute:second:" title="dct_dateWithYear:month:day:hour:minute:second:"></a>
+	<h3 class="subsubtitle method-title">dct_dateWithYear:month:day:hour:minute:second:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> Creates a data with a year, month, day, hour, minute and second. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSDate *)dct_dateWithYear:(NSInteger)<em>year</em> month:(NSInteger)<em>month</em> day:(NSInteger)<em>day</em> hour:(NSInteger)<em>hour</em> minute:(NSInteger)<em>minute</em> second:(NSInteger)<em>second</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>year</em></dt>
+			<dd> The year of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>month</em></dt>
+			<dd> The month of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>day</em></dt>
+			<dd> The day of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>hour</em></dt>
+			<dd> The hour of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minute</em></dt>
+			<dd> The minute of the date. </dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>second</em></dt>
+			<dd> The second of the date. </dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The newly created date. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				<div class="section section-methods">
+					<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_day" title="dct_day"></a>
+	<h3 class="subsubtitle method-title">dct_day</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The day component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_day</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The day component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_era" title="dct_era"></a>
+	<h3 class="subsubtitle method-title">dct_era</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The era component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_era</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The era component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_gregorianCalendarComponents" title="dct_gregorianCalendarComponents"></a>
+	<h3 class="subsubtitle method-title">dct_gregorianCalendarComponents</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> @name Getting Gregorian date components */ </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSDateComponents *)dct_gregorianCalendarComponents</code></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_hour" title="dct_hour"></a>
+	<h3 class="subsubtitle method-title">dct_hour</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The hour component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_hour</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The hour component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_minute" title="dct_minute"></a>
+	<h3 class="subsubtitle method-title">dct_minute</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The minute component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_minute</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The minute component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_month" title="dct_month"></a>
+	<h3 class="subsubtitle method-title">dct_month</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The month component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_month</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The month component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_second" title="dct_second"></a>
+	<h3 class="subsubtitle method-title">dct_second</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The second component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_second</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The second component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_week" title="dct_week"></a>
+	<h3 class="subsubtitle method-title">dct_week</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The week component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_week</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The week component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_weekday" title="dct_weekday"></a>
+	<h3 class="subsubtitle method-title">dct_weekday</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The weekday component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_weekday</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The weekday component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_weekdayOrdinal" title="dct_weekdayOrdinal"></a>
+	<h3 class="subsubtitle method-title">dct_weekdayOrdinal</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The weekdayOrdinal component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_weekdayOrdinal</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The weekdayOrdinal component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+					<div class="section-method">
+	<a name="//api/name/dct_year" title="dct_year"></a>
+	<h3 class="subsubtitle method-title">dct_year</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p> The year component of the receiver. </p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)dct_year</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p> The year component of the receiver as an integer. </p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSDate+DCTDateComponents.h</code><br />
+	</div>				
+	
+	
+</div>
+					
+				</div>
+				
+				
+				
+				
+			</div>
+			<div id="footer">
+				<hr />
+				<div class="footer-copyright">
+					<p><span class="copyright">&copy; 2010 Daniel Tull. All rights reserved. (Last updated: 2010-12-19)</span><br />
+					<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc</a>.</span></p>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>
