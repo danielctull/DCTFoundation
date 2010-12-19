@@ -2,7 +2,7 @@ h1. DCTFoundation
 
 DCTFoundation is my collection of extensions to the Objective-C Foundation framework.
 
-Documentation for it can be found at http://danieltull.co.uk/Documentation/DCTFoundation.
+Documentation for it can be found at "http://danieltull.co.uk/Documentation/DCTFoundation":http://danieltull.co.uk/Documentation/DCTFoundation.
 
 h2. Branch Structure
 
