@@ -36,8 +36,18 @@
 
 #import <Foundation/Foundation.h>
 
+/** Convenience methods for creating NSErrors. */
 @interface NSError (DCTExtensions)
 
+/** Convenience method for creating an NSError.
+ 
+ @param domain String to use as the domain.
+ @param code Integer to use as the error code.
+ @param localizedDescription String to use as the localized description.
+ @param localizedFailureReason String to use as the reason.
+ @param localizedRecoveryOptions Array of options.
+ @param localizedRecoverySuggestion String suggestion.
+ */
 + (id)dct_errorWithDomain:(NSString *)domain
 					 code:(NSInteger)code
 	 localizedDescription:(NSString *)localizedDescription 
@@ -45,6 +55,12 @@
  localizedRecoveryOptions:(NSArray *)localizedRecoveryOptions
 localizedRecoverySuggestion:(NSString *)localizedRecoverySuggestion;
 
+/** Convenience method for creating an NSError.
+ 
+ @param domain String to use as the domain.
+ @param code Integer to use as the error code.
+ @param localizedDescription String to use as the localized description.
+ */
 + (id)dct_errorWithDomain:(NSString *)domain
 					 code:(NSInteger)code
 	 localizedDescription:(NSString *)localizedDescription;

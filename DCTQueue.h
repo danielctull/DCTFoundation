@@ -54,14 +54,14 @@
  @param object The object to add.
  */
 - (void)enqueue:(id)object;
-- (void)push:(id)object;
+//- (void)push:(id)object;
 
 /** Remove the object at the front of the queue and return it.
  
  @return The object at the front of the queue.
  */
 - (id)dequeue;
-- (id)pop;
+//- (id)pop;
 
 /** Return the object at the front of the queue without removing it from the queue.
  

@@ -70,9 +70,6 @@
  */
 - (id)top;
 
-
-- (id)topObject;
-
 /// @name Extra functionality
 
 
