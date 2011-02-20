@@ -36,45 +36,37 @@
 
 #import <Foundation/Foundation.h>
 
-
+/**
+ Implementation of a queue data (first in, first out) structure.
+ */
 @interface DCTQueue : NSObject {
 	NSMutableArray *queue;
 }
 
-
-/** @name Standard queue operations
- @{
- */
-
-/** @brief The number of items in the queue.
+/** The number of items in the queue.
  
  @return The number of items in the queue.
  */
 - (NSUInteger)count;
 
-/** @brief Add an object to the end of the queue.
+/** Add an object to the end of the queue.
  
  @param object The object to add.
  */
 - (void)enqueue:(id)object;
-- (void)push:(id)object;
+//- (void)push:(id)object;
 
-/** @brief Remove the object at the front of the queue and return it.
+/** Remove the object at the front of the queue and return it.
  
  @return The object at the front of the queue.
  */
 - (id)dequeue;
-- (id)pop;
+//- (id)pop;
 
-/** @brief Return the object at the front of the queue without removing it from the queue.
+/** Return the object at the front of the queue without removing it from the queue.
  
  @return The object at the front of the queue.
  */
 - (id)front;
-
-/**
- @}
- */
-
 
 @end

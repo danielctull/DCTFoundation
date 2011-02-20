@@ -42,89 +42,77 @@
  */
 @interface NSDate (DCTDateComponents)
 
-/** @name Getting Gregorian date components
- @{
- */
+/// @name Getting Gregorian date components */
 
 - (NSDateComponents *)dct_gregorianCalendarComponents;
 
-/**
- @}
- */
+/// Getting individual components
 
-/** @name Getting individual components
- @{
- */
-
-/** @brief The second component of the receiver.
+/** The second component of the receiver.
  
  @return The second component of the receiver as an integer.
  */
 - (NSInteger)dct_second;
 
-/** @brief The minute component of the receiver.
+/** The minute component of the receiver.
  
  @return The minute component of the receiver as an integer.
  */
 - (NSInteger)dct_minute;
 
-/** @brief The hour component of the receiver.
+/** The hour component of the receiver.
  
  @return The hour component of the receiver as an integer.
  */
 - (NSInteger)dct_hour;
 
-/** @brief The day component of the receiver.
+/** The day component of the receiver.
  
  @return The day component of the receiver as an integer.
  */
 - (NSInteger)dct_day;
 
-/** @brief The weekday component of the receiver.
+/** The weekday component of the receiver.
  
  @return The weekday component of the receiver as an integer.
  */
 - (NSInteger)dct_weekday;
 
-/** @brief The weekdayOrdinal component of the receiver.
+/** The weekdayOrdinal component of the receiver.
  
  @return The weekdayOrdinal component of the receiver as an integer.
  */
 - (NSInteger)dct_weekdayOrdinal;
 
-/** @brief The week component of the receiver.
+/** The week component of the receiver.
  
  @return The week component of the receiver as an integer.
  */
 - (NSInteger)dct_week;
 
-/** @brief The month component of the receiver.
+/** The month component of the receiver.
  
  @return The month component of the receiver as an integer.
  */
 - (NSInteger)dct_month;
 
-/** @brief The year component of the receiver.
+/** The year component of the receiver.
  
  @return The year component of the receiver as an integer.
  */
 - (NSInteger)dct_year;
 
-/** @brief The era component of the receiver.
+/** The era component of the receiver.
  
  @return The era component of the receiver as an integer.
  */
 - (NSInteger)dct_era;
 
-/**
- @}
- */
 
-/** @name Creating a date
- @{
- */
 
-/** @brief Creates a data with a year.
+/// @name Creating a date
+
+/** Creates a data with a year.
  
  @param year The year of the date.
  
@@ -132,7 +120,7 @@
  */
 + (NSDate *)dct_dateWithYear:(NSInteger)year;
 
-/** @brief Creates a data with a year and month.
+/** Creates a data with a year and month.
  
  @param year The year of the date.
  @param month The month of the date.
@@ -141,7 +129,7 @@
  */
 + (NSDate *)dct_dateWithYear:(NSInteger)year month:(NSInteger)month;
 
-/** @brief Creates a data with a year, month and day.
+/** Creates a data with a year, month and day.
  
  @param year The year of the date.
  @param month The month of the date.
@@ -151,7 +139,7 @@
  */
 + (NSDate *)dct_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
 
-/** @brief Creates a data with a year, month, day and hour.
+/** Creates a data with a year, month, day and hour.
  
  @param year The year of the date.
  @param month The month of the date.
@@ -162,7 +150,7 @@
  */
 + (NSDate *)dct_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour;
 
-/** @brief Creates a data with a year, month, day, hour and minute.
+/** Creates a data with a year, month, day, hour and minute.
  
  @param year The year of the date.
  @param month The month of the date.
@@ -174,7 +162,7 @@
  */
 + (NSDate *)dct_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute;
 
-/** @brief Creates a data with a year, month, day, hour, minute and second.
+/** Creates a data with a year, month, day, hour, minute and second.
  
  @param year The year of the date.
  @param month The month of the date.
@@ -186,9 +174,5 @@
  @return The newly created date.
  */
 + (NSDate *)dct_dateWithYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
-
-/**
- @}
- */
 
 @end

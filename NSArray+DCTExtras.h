@@ -39,20 +39,62 @@
 
 @interface NSArray (DCTExtras)
 
-/** @brief Returns whether or not the receiving array is empty.
+
+
+/** Returns whether or not the receiving array is empty.
  
  @return A boolean indicating whether or not the receiving array is empty.
  */
 - (BOOL)dct_isEmpty;
 
+
+
+/** Returns the first object in the array or nil if the receiver is empty.
+ 
+ @return The first object in the array or nil.
+ */
 - (id)dct_firstObject;
 
+
+
+/** Returns an array containing only objects which are the kind of the given class.
+ 
+ @param aClass The class to check objects for.
+ @return Subarray containing only objects which are kind of the given class.
+ */
 - (NSArray *)dct_subarrayWithObjectsOfClass:(Class)aClass;
 
+
+
+/** Looks in the receiver for an object of the given class and returns YES if one is found.
+ 
+ @param aClass The class to check objects for.
+ @return YES if receiver contains an object of the given class, NO otherwise.
+ */
 - (BOOL)dct_containsObjectOfClass:(Class)aClass;
 
+
+
+/** Splits the receiver into sub-arrays of the given count.
+ 
+ If the receiver has 12 objects, and you give a count of 5 you will be returned an array
+ with 3 arrays inside, with counts of 5, 5 and 2. If you gave a count of 6, you would be 
+ returned an array with 2 sub-arrays, both with a count of 6.
+
+ @param aCount The maximum length each of the subarrays should be.
+ @return An array of the sub-arrays.
+ */
 - (NSArray *)dct_splitArrayIntoArraysWithCount:(NSInteger)aCount;
 
+
+
+/** Creates a sorted array of objects in the receiver, by putting the given key into a 
+ sort descriptor array.
+ 
+ @param key The key to sort each of the objects with.
+ @param ascending Boolean to say whether the sorted array should be ascending or not (descending).
+ @return Sorted array.
+ */
 - (NSArray *)dct_sortedArrayUsingKey:(NSString *)key ascending:(BOOL)ascending;
 
 @end

@@ -36,12 +36,51 @@
 
 #import <Foundation/Foundation.h>
 
+/** Helper methods to handle checks before perfoming selectors.
+ */
 @interface NSObject (DCTPerformSelector)
 
+/// @name Protocol Checking
+
+/**  If the receiver conforms to the given protocol, dct_safePerformSelector: is called with the given selector.
+ 
+ @param selector The selector to perform.
+ @param protocol The protocol that the receiving object should conform to.
+ 
+ @return The return from dct_safePerformSelector: or nil if the object doesn't conform to the protocol.
+ */
 - (id)dct_performSelector:(SEL)selector ifConformsToProtocol:(Protocol *)protocol;
+
+/**  If the receiver conforms to the given protocol, dct_safePerformSelector:withObject: is called with the 
+ given selector and object.
+ 
+ @param selector The selector to perform.
+ @param object The object to use.
+ @param protocol The protocol that the receiving object should conform to.
+ 
+ @return The return from dct_safePerformSelector:withObject: or nil if the object doesn't conform to the protocol.
+ */
 - (id)dct_performSelector:(SEL)selector withObject:(id)object ifConformsToProtocol:(Protocol *)protocol;
 
+/// @name Selector Checking
+
+
+/** Checks to make sure the selector exists before calling performSelector: with the given selector.
+ 
+ @param selector The selector to perform.
+ @return The return from performSelector: or nil if the object doesn't conform to the protocol.
+ */
 - (id)dct_safePerformSelector:(SEL)selector;
+
+
+/** Checks to make sure the selector exists before calling performSelector:withObject: with the given selector and object.
+ 
+ @param selector The selector to perform.
+ @param object The object to use.
+ 
+ @return The return from performWithSelector:withObject: or nil if the selector doesn't exist.
+ */
+
 - (id)dct_safePerformSelector:(SEL)selector withObject:(id)object;
 
 @end

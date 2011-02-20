@@ -8,4 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
+/** Typedef to a block. */
 typedef void (^DCTBlock) ();
