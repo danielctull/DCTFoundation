@@ -44,9 +44,7 @@
 		24627D361348AE58008C9E99 /* NSObject+DCTPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 24627D131348AE58008C9E99 /* NSObject+DCTPerformSelector.m */; };
 		24627D371348AE58008C9E99 /* NSObject+DCTPerformSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 24627D131348AE58008C9E99 /* NSObject+DCTPerformSelector.m */; };
 		24C46E7D1348AE1500758AE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C46E7C1348AE1500758AE8 /* Foundation.framework */; };
-		24C46E881348AE1500758AE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C46E871348AE1500758AE8 /* UIKit.framework */; };
 		24C46E891348AE1500758AE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C46E7C1348AE1500758AE8 /* Foundation.framework */; };
-		24C46E8B1348AE1500758AE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C46E8A1348AE1500758AE8 /* CoreGraphics.framework */; };
 		24C46E8E1348AE1500758AE8 /* libDCTFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C46E791348AE1500758AE8 /* libDCTFoundation.a */; };
 		24C46E941348AE1500758AE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24C46E921348AE1500758AE8 /* InfoPlist.strings */; };
 		24C46E971348AE1500758AE8 /* DCTFoundationTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 24C46E961348AE1500758AE8 /* DCTFoundationTests.h */; };
@@ -92,8 +90,6 @@
 		24C46E7C1348AE1500758AE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24C46E801348AE1500758AE8 /* DCTFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTFoundation-Prefix.pch"; sourceTree = "<group>"; };
 		24C46E861348AE1500758AE8 /* DCTFoundationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTFoundationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		24C46E871348AE1500758AE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		24C46E8A1348AE1500758AE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		24C46E911348AE1500758AE8 /* DCTFoundationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTFoundationTests-Info.plist"; sourceTree = "<group>"; };
 		24C46E931348AE1500758AE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24C46E951348AE1500758AE8 /* DCTFoundationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTFoundationTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -114,9 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C46E881348AE1500758AE8 /* UIKit.framework in Frameworks */,
 				24C46E891348AE1500758AE8 /* Foundation.framework in Frameworks */,
-				24C46E8B1348AE1500758AE8 /* CoreGraphics.framework in Frameworks */,
 				24C46E8E1348AE1500758AE8 /* libDCTFoundation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,8 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				24C46E7C1348AE1500758AE8 /* Foundation.framework */,
-				24C46E871348AE1500758AE8 /* UIKit.framework */,
-				24C46E8A1348AE1500758AE8 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
