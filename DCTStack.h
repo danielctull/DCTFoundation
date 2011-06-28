@@ -41,7 +41,7 @@
  to make it more useful.
  */
 @interface DCTStack : NSObject {
-	NSMutableArray *stack;
+	__strong NSMutableArray *stack;
 }
 
 /// @name Standard stack operations

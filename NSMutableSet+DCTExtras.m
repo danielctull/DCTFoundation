@@ -12,9 +12,7 @@
 @implementation NSMutableSet (DCTExtras)
 
 - (void)dct_addBlock:(DCTBlock)block {
-	id blockcopy = [block copy];
-	[self addObject:blockcopy];
-	[blockcopy release];
+	[self addObject:[block copy]];
 }
 
 @end

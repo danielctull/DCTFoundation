@@ -40,7 +40,7 @@
  Implementation of a queue data (first in, first out) structure.
  */
 @interface DCTQueue : NSObject {
-	NSMutableArray *queue;
+	__strong NSMutableArray *queue;
 }
 
 /** The number of items in the queue.

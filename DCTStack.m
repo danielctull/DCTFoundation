@@ -48,10 +48,6 @@
 	return self;
 }
 
-- (void)dealloc {
-	[stack release];
-	[super dealloc];
-}
 
 - (NSUInteger)count {
 	return [stack count];
@@ -62,9 +58,9 @@
 }
 
 - (id)pop {
-	id object = [[stack lastObject] retain];
+	id object = [stack lastObject];
 	[stack removeLastObject];
-	return [object autorelease];
+	return object;
 }
 
 - (id)topObject {
@@ -72,11 +68,11 @@
 }
 
 - (id)top {
-	return [[[stack lastObject] retain] autorelease];
+	return [stack lastObject];
 }
 
 - (NSArray *)allObjects {
-	return [[stack retain] autorelease];
+	return [[NSArray alloc] initWithArray:stack];
 }
 
 - (NSArray *)popToObject:(id)object {
@@ -86,10 +82,13 @@
 	while (![[self topObject] isEqual:object]) {
 		[returnArray addObject:[self pop]];
 	}
-	return [returnArray autorelease];
+	return [[NSArray alloc] initWithArray:returnArray];
 }
 
 - (NSArray *)popToRootObject {
+	
+	if ([stack count] == 0) return nil;
+	
 	return [self popToObject:[stack objectAtIndex:0]];
 }
 

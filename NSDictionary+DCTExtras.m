@@ -60,8 +60,6 @@
     
     id dict = [self dictionaryWithObjects:values forKeys:keys];
 	
-	[keys release];
-	[values release];
 	
 	return dict;
 }
@@ -77,7 +75,6 @@
 			[mArray addObject:key];
 	
 	NSArray *returnArray = [NSArray arrayWithArray:mArray];
-	[mArray release];
 	return returnArray;
 }
 

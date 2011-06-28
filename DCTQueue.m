@@ -48,10 +48,6 @@
 	return self;
 }
 
-- (void)dealloc {
-	[queue release];
-	[super dealloc];
-}
 
 - (NSUInteger)count {
 	return [queue count];
@@ -66,9 +62,9 @@
 }
 
 - (id)dequeue {
-	id object = [[queue objectAtIndex:0] retain];
+	id object = [queue objectAtIndex:0];
 	[queue removeObjectAtIndex:0];
-	return [object autorelease];
+	return object;
 }
 
 - (id)pop {
@@ -76,7 +72,7 @@
 }
 
 - (id)front {
-	return [[[queue objectAtIndex:0] retain] autorelease];
+	return [queue objectAtIndex:0];
 }
 
 @end

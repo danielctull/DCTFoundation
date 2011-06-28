@@ -37,14 +37,9 @@
 #import <Foundation/Foundation.h>
 
 
-@interface DCTObservationInfo : NSObject {
-	id object;
-	NSKeyValueObservingOptions options;
-	NSString *keyPath;
-	void *context;
-}
+@interface DCTObservationInfo : NSObject
 
-@property (nonatomic, assign) id object;
+@property (nonatomic, weak) id object;
 @property (nonatomic, assign) NSKeyValueObservingOptions options;
 @property (nonatomic, copy) NSString *keyPath;
 @property (nonatomic, assign) void *context;

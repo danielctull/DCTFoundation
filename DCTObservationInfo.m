@@ -42,8 +42,7 @@
 @synthesize object, options, keyPath, context;
 
 - (void)dealloc {
-	[keyPath release], keyPath = nil;
-    [super dealloc];
+	keyPath = nil;
 }
 
 @end

@@ -58,8 +58,7 @@
 		if ([o isKindOfClass:aClass])
 			[mArray addObject:o];
 	
-	NSArray *subarray = [NSArray arrayWithArray:mArray];
-	[mArray release];
+	NSArray *subarray = [[NSArray alloc] initWithArray:mArray];
 	return subarray;
 }
 
@@ -93,14 +92,12 @@
 	}
 	
 	NSArray *returnArray = [splitArrays copy];
-	[splitArrays release];
-	return [returnArray autorelease];
+	return returnArray;
 }
 
 - (NSArray *)dct_sortedArrayUsingKey:(NSString *)key ascending:(BOOL)ascending {
 	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:key ascending:ascending];
 	NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-	[sortDescriptor release];
 	return [self sortedArrayUsingDescriptors:sortDescriptors];
 }
 

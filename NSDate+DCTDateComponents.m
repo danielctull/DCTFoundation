@@ -42,7 +42,6 @@
 - (NSDateComponents *)dct_gregorianCalendarComponents {
 	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	NSDateComponents *components = [gregorian components:(NSSecondCalendarUnit | NSMinuteCalendarUnit | NSHourCalendarUnit | NSDayCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit | NSWeekCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit | NSEraCalendarUnit) fromDate:self];
-	[gregorian release];
 	return components;
 }
 
@@ -125,8 +124,6 @@
 	[comps setSecond:second];
 	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	NSDate *date = [gregorian dateFromComponents:comps];
-	[comps release];
-	[gregorian release];
 	return date;
 }
 
