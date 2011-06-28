@@ -37,7 +37,9 @@
 #import "DCTQueue.h"
 
 
-@implementation DCTQueue
+@implementation DCTQueue {
+	__strong NSMutableArray *queue;
+}
 
 - (id)init {
 	

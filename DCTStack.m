@@ -37,7 +37,9 @@
 #import "DCTStack.h"
 
 
-@implementation DCTStack
+@implementation DCTStack {
+	__strong NSMutableArray *stack;
+}
 
 - (id)init {
 	

@@ -40,9 +40,7 @@
  push and pop operations usually found in stacks, plus a few other methods
  to make it more useful.
  */
-@interface DCTStack : NSObject {
-	__strong NSMutableArray *stack;
-}
+@interface DCTStack : NSObject
 
 /// @name Standard stack operations
 
