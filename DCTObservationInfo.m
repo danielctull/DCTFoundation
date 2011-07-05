@@ -41,9 +41,6 @@
 
 @synthesize object, options, keyPath, context;
 
-- (void)dealloc {
-	keyPath = nil;
-}
 
 @end
 
