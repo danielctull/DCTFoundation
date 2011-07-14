@@ -51,9 +51,13 @@
 	while ((key)) {
 		
         [keys addObject:key];
-		[values addObject:va_arg(args, id)];	
 		
-		key = va_arg(args, id);
+		
+		void *x = va_arg(args, void*);
+		[values addObject:(__bridge id)x];	
+		
+		x = va_arg(args, void*);
+		key = (__bridge id)x;
 	}
 	
 	va_end(args);
