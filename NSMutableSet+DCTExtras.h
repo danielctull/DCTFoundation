@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCTBlock.h"
+
+typedef void (^DCTBlock) ();
 
 /// Extra methods for NSMutableSet.
 @interface NSMutableSet (DCTExtras)
