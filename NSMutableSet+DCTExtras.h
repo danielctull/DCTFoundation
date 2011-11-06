@@ -8,20 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^DCTBlock) ();
-
 /// Extra methods for NSMutableSet.
 @interface NSMutableSet (DCTExtras)
 
 
 /** Block copies the given block before adding it.
  
- A DCTBlock is defined in `DCTBlock.h` as the following, so you can pass any block you wish into this method.
- 
- `typedef void (^DCTBlock) ();`
- 
  @param block The block to add.
  */
-- (void)dct_addBlock:(DCTBlock)block;
+- (void)dct_addBlock:(void (^)())block;
 
 @end

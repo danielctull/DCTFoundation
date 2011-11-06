@@ -11,7 +11,7 @@
 
 @implementation NSMutableSet (DCTExtras)
 
-- (void)dct_addBlock:(DCTBlock)block {
+- (void)dct_addBlock:(void (^)())block {
 	[self addObject:[block copy]];
 }
 
