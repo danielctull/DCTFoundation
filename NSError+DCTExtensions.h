@@ -34,7 +34,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+#import "DCTFoundation.h"
 
 /** Convenience methods for creating NSErrors. */
 @interface NSError (DCTExtensions)

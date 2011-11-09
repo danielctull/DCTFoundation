@@ -6,7 +6,7 @@
 //  Copyright 2010 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DCTFoundation.h"
 
 /// Extra methods for NSMutableSet.
 @interface NSMutableSet (DCTExtras)

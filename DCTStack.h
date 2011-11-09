@@ -34,7 +34,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+#import "DCTFoundation.h"
 
 /** This represents a stack (last in, first out) data structure in computer science. It has the
  push and pop operations usually found in stacks, plus a few other methods

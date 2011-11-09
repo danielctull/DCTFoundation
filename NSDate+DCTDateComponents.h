@@ -34,7 +34,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+#import "DCTFoundation.h"
 
 
 /** An extension to NSDate to have easier access to the individual components

@@ -34,7 +34,7 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+#import "DCTFoundation.h"
 
 /**
  Implementation of a queue data (first in, first out) structure.

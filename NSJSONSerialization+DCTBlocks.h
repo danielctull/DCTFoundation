@@ -6,7 +6,7 @@
 //  Copyright (c) 2011 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DCTFoundation.h"
 
 @interface NSJSONSerialization (DCTBlocks)
 
