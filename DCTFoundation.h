@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 #ifndef dctfoundation
-#define dctfoundation
+#define dctfoundation_1_0     10000
+#define dctfoundation_2_0     20000
+#define dctfoundation_2_0_1	  20001
+#define dctfoundation         dctfoundation_2_0_1
 #endif
