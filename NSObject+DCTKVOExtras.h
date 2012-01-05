@@ -36,8 +36,6 @@
 
 #import "DCTFoundation.h"
 
-typedef void (^DCTKeyValueChange) ();
-
 /** Helper methods to handle key-value coding calls.
  */
 @interface NSObject (DCTKVOExtras)
@@ -46,25 +44,17 @@ typedef void (^DCTKeyValueChange) ();
 /** Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for the given key
  either side of the change block.
  
- DCTKeyValueChange is a block defined as:
- 
- `typedef void (^DCTKeyValueChange) ();`
- 
  @param key The key that is changed in the change block.
  @param change The change block that performs the change.
  */
-- (void)dct_changeValueForKey:(NSString *)key withChange:(DCTKeyValueChange)change;
+- (void)dct_changeValueForKey:(NSString *)key withChange:(void (^)())change;
 
 /** Convenience method that calls willChangeValueForKey: and didChangeValueForKey: for each key
  in the array of keys either side of the change block.
  
- DCTKeyValueChange is a block defined as:
- 
- `typedef void (^DCTKeyValueChange) ();`
- 
  @param keys An array of keys that are changed in the change block.
  @param change The change block that performs the change.
  */
-- (void)dct_changeValueForKeys:(NSArray *)keys withChange:(DCTKeyValueChange)change;
+- (void)dct_changeValueForKeys:(NSArray *)keys withChange:(void (^)())change;
 
 @end

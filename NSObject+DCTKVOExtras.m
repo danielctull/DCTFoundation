@@ -39,13 +39,13 @@
 
 @implementation NSObject (DCTKVOExtras)
 
-- (void)dct_changeValueForKey:(NSString *)key withChange:(DCTKeyValueChange)change {
+- (void)dct_changeValueForKey:(NSString *)key withChange:(void (^)())change {
 	[self willChangeValueForKey:key];
 	change();
 	[self didChangeValueForKey:key];
 }
 
-- (void)dct_changeValueForKeys:(NSArray *)keys withChange:(DCTKeyValueChange)change {
+- (void)dct_changeValueForKeys:(NSArray *)keys withChange:(void (^)())change {
 	for (NSString *key in keys) [self willChangeValueForKey:key];
 	change();
 	for (NSString *key in [keys reverseObjectEnumerator]) [self didChangeValueForKey:key];
