@@ -48,7 +48,7 @@
 - (void)dct_changeValueForKeys:(NSArray *)keys withChange:(DCTKeyValueChange)change {
 	for (NSString *key in keys) [self willChangeValueForKey:key];
 	change();
-	for (NSString *key in keys) [self didChangeValueForKey:key];
+	for (NSString *key in [keys reverseObjectEnumerator]) [self didChangeValueForKey:key];
 }
 
 @end
