@@ -27,3 +27,14 @@
 #define dctfoundation         dctfoundation_2_0_2
 
 #endif
+
+#import "DCTQueue.h"
+#import "DCTStack.h"
+#import "NSArray+DCTExtras.h"
+#import "NSDate+DCTDateComponents.h"
+#import "NSDictionary+DCTExtras.h"
+#import "NSError+DCTExtensions.h"
+#import "NSJSONSerialization+DCTBlocks.h"
+#import "NSMutableArray+DCTExtras.h"
+#import "NSMutableSet+DCTExtras.h"
+#import "NSObject+DCTKVOExtras.h"
