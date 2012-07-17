@@ -23,8 +23,9 @@
 #define dctfoundation_2_0     20000
 #define dctfoundation_2_0_1	  20001
 #define dctfoundation_2_0_2	  20002
+#define dctfoundation_2_1	  20100
 
-#define dctfoundation         dctfoundation_2_0_2
+#define dctfoundation         dctfoundation_2_1
 
 #endif
 
